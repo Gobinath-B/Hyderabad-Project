@@ -11,7 +11,10 @@ app.get("/product", (req, res) => res.render("product"));
 app.get("/product/:id", (req, res) => res.render("single-product"));
 app.get("/clients", (req, res) => res.render("client"));
 app.get("/history", (req, res) => res.render("history"));
-app.get("/admin", (req,res) => res.render("admin"))
+app.get("/dashboard", (req,res) => res.render("admin/dashboard"))
+app.get("/edit", (req,res) => res.render("admin/edit"))
+app.get("/add", (req,res) => res.render("admin/add"))
+app.get("/login", (req,res) => res.render("admin/login"))
 
 
 var server = app.listen(3000, function () {
