@@ -1,0 +1,126 @@
+
+
+/*=============================================
+=            slider one            =
+=============================================*/
+
+.tp-caption.rev-btn-01,.rev-btn-01{color:#222222;font-size:12px;line-height:12px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffc246;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}.tp-caption.rev-btn-01:hover,.rev-btn-01:hover{color:#ffffff;text-decoration:none;background-color:#222222;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px;cursor:pointer}.tp-caption.rev-btn-02,.rev-btn-02{color:#ffffff;font-size:12px;line-height:12px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:rgba(255,255,255,0);border-color:#ffffff;border-style:solid;border-width:1px 1px 1px 1px;border-radius:0px 0px 0px 0px}.tp-caption.rev-btn-02:hover,.rev-btn-02:hover{color:#ffc246;text-decoration:none;background-color:rgba(255,255,255,0);border-color:#ffc246;border-style:solid;border-width:1px 1px 1px 1px;border-radius:0px 0px 0px 0px;cursor:pointer}
+
+#rev_slider_2_1_wrapper .tp-loader.spinner3{ background-color: #FFFFFF !important; } 
+
+.erinyen.tparrows{cursor:pointer; background:rgba(0,0,0,0.5); min-width:70px; min-height:70px; position:absolute; display:block; z-index:100; border-radius:50%}.erinyen.tparrows:before{font-family:"revicons"; font-size:20px; color:rgb(255,255,255); display:block; line-height:70px; text-align:center;   z-index:2; position:relative}.erinyen.tparrows.tp-leftarrow:before{content:"\e824"}.erinyen.tparrows.tp-rightarrow:before{content:"\e825"}.erinyen .tp-title-wrap{position:absolute; z-index:1; display:inline-block; background:rgba(0,0,0,0.5); min-height:70px; line-height:70px; top:0px; margin-left:0px; border-radius:35px; overflow:hidden;  transition:opacity 0.3s; -webkit-transition:opacity 0.3s; -moz-transition:opacity 0.3s; -webkit-transform:scale(0); -moz-transform:scale(0); transform:scale(0);  visibility:hidden; opacity:0}.erinyen.tparrows:hover .tp-title-wrap{-webkit-transform:scale(1); -moz-transform:scale(1); transform:scale(1); opacity:1; visibility:visible}.erinyen.tp-rightarrow .tp-title-wrap{right:0px;  margin-right:0px;margin-left:0px;  -webkit-transform-origin:100% 50%; border-radius:35px; padding-right:20px; padding-left:10px}.erinyen.tp-leftarrow .tp-title-wrap{padding-left:20px; padding-right:10px}.erinyen .tp-arr-titleholder{letter-spacing:3px;  position:relative; -webkit-transition:-webkit-transform 0.3s; transition:transform 0.3s; transform:translatex(200px);  text-transform:uppercase; color:rgb(255,255,255); font-weight:600; font-size:13px; line-height:70px; white-space:nowrap; padding:0px 20px; margin-left:11px; opacity:0}.erinyen .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover}.erinyen .tp-arr-img-over{width:100%; height:100%; position:absolute; top:0px; left:0px;  background:rgba(0,0,0,0.51)}.erinyen.tp-rightarrow .tp-arr-titleholder{transform:translatex(-200px);  margin-left:0px; margin-right:11px}.erinyen.tparrows:hover .tp-arr-titleholder{transform:translatex(0px);  -webkit-transform:translatex(0px); transition-delay:0.1s; opacity:1}
+
+/*=====  End of slider one  ======*/
+
+
+/*=============================================
+=            slider two            =
+=============================================*/
+
+.tp-caption.rev-btn-01,.rev-btn-01{color:#222222;font-size:12px;line-height:12px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffc246;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}.tp-caption.rev-btn-01:hover,.rev-btn-01:hover{color:#ffffff;text-decoration:none;background-color:#222222;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px;cursor:pointer}.tp-caption.rev-btn-02,.rev-btn-02{color:#ffffff;font-size:12px;line-height:12px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:rgba(255,255,255,0);border-color:#ffffff;border-style:solid;border-width:1px 1px 1px 1px;border-radius:0px 0px 0px 0px}.tp-caption.rev-btn-02:hover,.rev-btn-02:hover{color:#ffc246;text-decoration:none;background-color:rgba(255,255,255,0);border-color:#ffc246;border-style:solid;border-width:1px 1px 1px 1px;border-radius:0px 0px 0px 0px;cursor:pointer}.tp-caption.TM-Button-flat-01,.TM-Button-flat-01{color:#222222;font-size:13px;line-height:14px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffcc00;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}.tp-caption.TM-Button-flat-01:hover,.TM-Button-flat-01:hover{color:#222222;text-decoration:none;background-color:#ffffff;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}
+
+#rev_slider_3_1_wrapper .tp-loader.spinner3{ background-color: #FFFFFF !important; }
+
+#rev_slider_3_1 .zeus.tparrows{cursor:pointer; min-width:70px; min-height:70px; position:absolute; display:block; z-index:100; border-radius:50%;   overflow:hidden; background:rgba(0,0,0,0.1)}#rev_slider_3_1 .zeus.tparrows:before{font-family:"revicons"; font-size:20px; color:rgb(255,255,255); display:block; line-height:70px; text-align:center;   z-index:2; position:relative}#rev_slider_3_1 .zeus.tparrows.tp-leftarrow:before{content:"\e824"}#rev_slider_3_1 .zeus.tparrows.tp-rightarrow:before{content:"\e825"}#rev_slider_3_1 .zeus .tp-title-wrap{background:rgba(0,0,0,0.5); width:100%; height:100%; top:0px; left:0px; position:absolute; opacity:0; transform:scale(0); -webkit-transform:scale(0);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s;  border-radius:50%}#rev_slider_3_1 .zeus .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover; border-radius:50%; transform:translatex(-100%); -webkit-transform:translatex(-100%);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s}#rev_slider_3_1 .zeus.tp-rightarrow .tp-arr-imgholder{transform:translatex(100%); -webkit-transform:translatex(100%)}#rev_slider_3_1 .zeus.tparrows:hover .tp-arr-imgholder{transform:translatex(0); -webkit-transform:translatex(0); opacity:1}#rev_slider_3_1 .zeus.tparrows:hover .tp-title-wrap{transform:scale(1); -webkit-transform:scale(1); opacity:1}
+
+/*=====  End of slider two  ======*/
+
+
+
+/*=============================================
+=            slider three            =
+=============================================*/
+
+#rev_slider_4_1_wrapper .tp-loader.spinner3{ background-color: #FFFFFF !important; }
+
+#rev_slider_4_1 .zeus.tparrows{cursor:pointer; min-width:70px; min-height:70px; position:absolute; display:block; z-index:100; border-radius:50%;   overflow:hidden; background:rgba(0,0,0,0.1)}#rev_slider_4_1 .zeus.tparrows:before{font-family:"revicons"; font-size:20px; color:rgb(255,255,255); display:block; line-height:70px; text-align:center;   z-index:2; position:relative}#rev_slider_4_1 .zeus.tparrows.tp-leftarrow:before{content:"\e824"}#rev_slider_4_1 .zeus.tparrows.tp-rightarrow:before{content:"\e825"}#rev_slider_4_1 .zeus .tp-title-wrap{background:rgba(0,0,0,0.5); width:100%; height:100%; top:0px; left:0px; position:absolute; opacity:0; transform:scale(0); -webkit-transform:scale(0);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s;  border-radius:50%}#rev_slider_4_1 .zeus .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover; border-radius:50%; transform:translatex(-100%); -webkit-transform:translatex(-100%);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s}#rev_slider_4_1 .zeus.tp-rightarrow .tp-arr-imgholder{transform:translatex(100%); -webkit-transform:translatex(100%)}#rev_slider_4_1 .zeus.tparrows:hover .tp-arr-imgholder{transform:translatex(0); -webkit-transform:translatex(0); opacity:1}#rev_slider_4_1 .zeus.tparrows:hover .tp-title-wrap{transform:scale(1); -webkit-transform:scale(1); opacity:1}
+
+/*=====  End of slider three  ======*/
+
+
+/*=============================================
+=            slider four            =
+=============================================*/
+
+.tp-caption.rev-btn-02,.rev-btn-02{color:#ffffff;font-size:12px;line-height:12px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:rgba(255,255,255,0);border-color:#ffffff;border-style:solid;border-width:1px 1px 1px 1px;border-radius:0px 0px 0px 0px}.tp-caption.rev-btn-02:hover,.rev-btn-02:hover{color:#ffc246;text-decoration:none;background-color:rgba(255,255,255,0);border-color:#ffc246;border-style:solid;border-width:1px 1px 1px 1px;border-radius:0px 0px 0px 0px;cursor:pointer}.tp-caption.TM-Button-flat-01,.TM-Button-flat-01{color:#222222;font-size:13px;line-height:14px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffcc00;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}.tp-caption.TM-Button-flat-01:hover,.TM-Button-flat-01:hover{color:#222222;text-decoration:none;background-color:#ffffff;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}
+
+/*=====  End of slider four  ======*/
+
+
+
+/*=============================================
+=            slider six            =
+=============================================*/
+
+.tp-caption.TM-Button-flat-01,.TM-Button-flat-01{color:#222222;font-size:13px;line-height:14px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffcc00;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}.tp-caption.TM-Button-flat-01:hover,.TM-Button-flat-01:hover{color:#222222;text-decoration:none;background-color:#ffffff;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}
+
+#rev_slider_5_1_wrapper .tp-loader.spinner3{ background-color: #FFFFFF !important; }
+#rev_slider_5_1 .zeus.tparrows{cursor:pointer; min-width:70px; min-height:70px; position:absolute; display:block; z-index:100; border-radius:50%;   overflow:hidden; background:rgba(0,0,0,0.1)}#rev_slider_5_1 .zeus.tparrows:before{font-family:"revicons"; font-size:20px; color:rgb(255,255,255); display:block; line-height:70px; text-align:center;   z-index:2; position:relative}#rev_slider_5_1 .zeus.tparrows.tp-leftarrow:before{content:"\e824"}#rev_slider_5_1 .zeus.tparrows.tp-rightarrow:before{content:"\e825"}#rev_slider_5_1 .zeus .tp-title-wrap{background:rgba(0,0,0,0.5); width:100%; height:100%; top:0px; left:0px; position:absolute; opacity:0; transform:scale(0); -webkit-transform:scale(0);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s;  border-radius:50%}#rev_slider_5_1 .zeus .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover; border-radius:50%; transform:translatex(-100%); -webkit-transform:translatex(-100%);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s}#rev_slider_5_1 .zeus.tp-rightarrow .tp-arr-imgholder{transform:translatex(100%); -webkit-transform:translatex(100%)}#rev_slider_5_1 .zeus.tparrows:hover .tp-arr-imgholder{transform:translatex(0); -webkit-transform:translatex(0); opacity:1}#rev_slider_5_1 .zeus.tparrows:hover .tp-title-wrap{transform:scale(1); -webkit-transform:scale(1); opacity:1}
+
+/*=====  End of slider six  ======*/
+
+
+/*=============================================
+=            slider seven            =
+=============================================*/
+.tp-caption.rev-btn-01,.rev-btn-01{color:#222222;font-size:12px;line-height:12px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffc246;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}.tp-caption.rev-btn-01:hover,.rev-btn-01:hover{color:#ffffff;text-decoration:none;background-color:#222222;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px;cursor:pointer}
+#rev_slider_7_1_wrapper .tp-loader.spinner3{ background-color: #FFFFFF !important; }
+#rev_slider_7_1 .zeus.tparrows{cursor:pointer; min-width:70px; min-height:70px; position:absolute; display:block; z-index:100; border-radius:50%;   overflow:hidden; background:rgba(0,0,0,0.1)}#rev_slider_7_1 .zeus.tparrows:before{font-family:"revicons"; font-size:20px; color:rgb(255,255,255); display:block; line-height:70px; text-align:center;   z-index:2; position:relative}#rev_slider_7_1 .zeus.tparrows.tp-leftarrow:before{content:"\e824"}#rev_slider_7_1 .zeus.tparrows.tp-rightarrow:before{content:"\e825"}#rev_slider_7_1 .zeus .tp-title-wrap{background:rgba(0,0,0,0.5); width:100%; height:100%; top:0px; left:0px; position:absolute; opacity:0; transform:scale(0); -webkit-transform:scale(0);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s;  border-radius:50%}#rev_slider_7_1 .zeus .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover; border-radius:50%; transform:translatex(-100%); -webkit-transform:translatex(-100%);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s}#rev_slider_7_1 .zeus.tp-rightarrow .tp-arr-imgholder{transform:translatex(100%); -webkit-transform:translatex(100%)}#rev_slider_7_1 .zeus.tparrows:hover .tp-arr-imgholder{transform:translatex(0); -webkit-transform:translatex(0); opacity:1}#rev_slider_7_1 .zeus.tparrows:hover .tp-title-wrap{transform:scale(1); -webkit-transform:scale(1); opacity:1}
+
+/*=====  End of slider seven  ======*/
+
+
+/*=============================================
+=            slider nine            =
+=============================================*/
+
+.tp-caption.TM-Button-flat-01,.TM-Button-flat-01{color:#222222;font-size:13px;line-height:14px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffcc00;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}.tp-caption.TM-Button-flat-01:hover,.TM-Button-flat-01:hover{color:#222222;text-decoration:none;background-color:#ffffff;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}
+
+#rev_slider_8_1_wrapper .tp-loader.spinner3{ background-color: #FFFFFF !important; } 
+
+#rev_slider_8_1 .zeus.tparrows{cursor:pointer; min-width:70px; min-height:70px; position:absolute; display:block; z-index:100; border-radius:50%;   overflow:hidden; background:rgba(0,0,0,0.1)}#rev_slider_8_1 .zeus.tparrows:before{font-family:"revicons"; font-size:20px; color:rgb(255,255,255); display:block; line-height:70px; text-align:center;   z-index:2; position:relative}#rev_slider_8_1 .zeus.tparrows.tp-leftarrow:before{content:"\e824"}#rev_slider_8_1 .zeus.tparrows.tp-rightarrow:before{content:"\e825"}#rev_slider_8_1 .zeus .tp-title-wrap{background:rgba(0,0,0,0.5); width:100%; height:100%; top:0px; left:0px; position:absolute; opacity:0; transform:scale(0); -webkit-transform:scale(0);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s;  border-radius:50%}#rev_slider_8_1 .zeus .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover; border-radius:50%; transform:translatex(-100%); -webkit-transform:translatex(-100%);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s}#rev_slider_8_1 .zeus.tp-rightarrow .tp-arr-imgholder{transform:translatex(100%); -webkit-transform:translatex(100%)}#rev_slider_8_1 .zeus.tparrows:hover .tp-arr-imgholder{transform:translatex(0); -webkit-transform:translatex(0); opacity:1}#rev_slider_8_1 .zeus.tparrows:hover .tp-title-wrap{transform:scale(1); -webkit-transform:scale(1); opacity:1}
+
+/*=====  End of slider nine  ======*/
+
+
+
+
+/*=============================================
+=            slider ten            =
+=============================================*/
+
+.tp-caption.rev-btn-01,.rev-btn-01{color:#222222;font-size:12px;line-height:12px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffc246;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}.tp-caption.rev-btn-01:hover,.rev-btn-01:hover{color:#ffffff;text-decoration:none;background-color:#222222;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px;cursor:pointer}
+
+#rev_slider_9_1_wrapper .tp-loader.spinner3{ background-color: #FFFFFF !important; } 
+
+#rev_slider_9_1 .zeus.tparrows{cursor:pointer; min-width:70px; min-height:70px; position:absolute; display:block; z-index:100; border-radius:50%;   overflow:hidden; background:rgba(0,0,0,0.1)}#rev_slider_9_1 .zeus.tparrows:before{font-family:"revicons"; font-size:20px; color:rgb(255,255,255); display:block; line-height:70px; text-align:center;   z-index:2; position:relative}#rev_slider_9_1 .zeus.tparrows.tp-leftarrow:before{content:"\e824"}#rev_slider_9_1 .zeus.tparrows.tp-rightarrow:before{content:"\e825"}#rev_slider_9_1 .zeus .tp-title-wrap{background:rgba(0,0,0,0.5); width:100%; height:100%; top:0px; left:0px; position:absolute; opacity:0; transform:scale(0); -webkit-transform:scale(0);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s;  border-radius:50%}#rev_slider_9_1 .zeus .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover; border-radius:50%; transform:translatex(-100%); -webkit-transform:translatex(-100%);  transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s}#rev_slider_9_1 .zeus.tp-rightarrow .tp-arr-imgholder{transform:translatex(100%); -webkit-transform:translatex(100%)}#rev_slider_9_1 .zeus.tparrows:hover .tp-arr-imgholder{transform:translatex(0); -webkit-transform:translatex(0); opacity:1}#rev_slider_9_1 .zeus.tparrows:hover .tp-title-wrap{transform:scale(1); -webkit-transform:scale(1); opacity:1}
+
+/*=====  End of slider ten  ======*/
+
+
+
+/*=============================================
+=            slider eleven            =
+=============================================*/
+
+.tp-caption.rev-btn-01,.rev-btn-01{color:#222222;font-size:12px;line-height:12px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffc246;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px}.tp-caption.rev-btn-01:hover,.rev-btn-01:hover{color:#ffffff;text-decoration:none;background-color:#222222;border-color:rgba(0,0,0,1);border-style:solid;border-width:0 0 0 0px;border-radius:0px 0px 0px 0px;cursor:pointer}
+
+.erinyen.tparrows{cursor:pointer; background:rgba(0,0,0,0.5); min-width:70px; min-height:70px; position:absolute; display:block; z-index:100; border-radius:50%}.erinyen.tparrows:before{font-family:"revicons"; font-size:20px; color:rgb(255,255,255); display:block; line-height:70px; text-align:center;   z-index:2; position:relative}.erinyen.tparrows.tp-leftarrow:before{content:"\e824"}.erinyen.tparrows.tp-rightarrow:before{content:"\e825"}.erinyen .tp-title-wrap{position:absolute; z-index:1; display:inline-block; background:rgba(0,0,0,0.5); min-height:70px; line-height:70px; top:0px; margin-left:0px; border-radius:35px; overflow:hidden;  transition:opacity 0.3s; -webkit-transition:opacity 0.3s; -moz-transition:opacity 0.3s; -webkit-transform:scale(0); -moz-transform:scale(0); transform:scale(0);  visibility:hidden; opacity:0}.erinyen.tparrows:hover .tp-title-wrap{-webkit-transform:scale(1); -moz-transform:scale(1); transform:scale(1); opacity:1; visibility:visible}.erinyen.tp-rightarrow .tp-title-wrap{right:0px;  margin-right:0px;margin-left:0px;  -webkit-transform-origin:100% 50%; border-radius:35px; padding-right:20px; padding-left:10px}.erinyen.tp-leftarrow .tp-title-wrap{padding-left:20px; padding-right:10px}.erinyen .tp-arr-titleholder{letter-spacing:3px;  position:relative; -webkit-transition:-webkit-transform 0.3s; transition:transform 0.3s; transform:translatex(200px);  text-transform:uppercase; color:rgb(255,255,255); font-weight:600; font-size:13px; line-height:70px; white-space:nowrap; padding:0px 20px; margin-left:11px; opacity:0}.erinyen .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover}.erinyen .tp-arr-img-over{width:100%; height:100%; position:absolute; top:0px; left:0px;  background:rgba(0,0,0,0.51)}.erinyen.tp-rightarrow .tp-arr-titleholder{transform:translatex(-200px);  margin-left:0px; margin-right:11px}.erinyen.tparrows:hover .tp-arr-titleholder{transform:translatex(0px);  -webkit-transform:translatex(0px); transition-delay:0.1s; opacity:1}
+
+/*=====  End of slider eleven  ======*/
+
+
+
+/*=============================================
+=            featured project slider            =
+=============================================*/
+
+#rev_slider_15_1_wrapper .tp-loader.spinner3{ background-color: #FFFFFF !important; } 
+
+.tp-caption.tm-features-projects,.tm-features-projects{color:#888888;font-size:15px;line-height:22px;font-weight:700;font-style:normal;font-family:Roboto;text-decoration:none;background-color:#ffffff;border-color:transparent;border-style:none;border-width:0 0 0 0px;border-radius:0 0 0 0px}
+
+/*=====  End of featured project slider  ======*/
+
+
+
+
