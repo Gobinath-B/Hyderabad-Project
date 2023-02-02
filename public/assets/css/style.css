@@ -64,6 +64,9 @@
 /*=============================================
 =            Helper CSS            =
 =============================================*/
+
+
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @media only screen and (min-width: 1300px) {
   .row-16 {
@@ -2054,7 +2057,7 @@ input::placeholder {
   padding-right: 30px;
 }
 .logo a img {
-  max-width: 160px;
+  width: auto;
 }
 
 .header-navigation {
