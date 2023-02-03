@@ -1,46 +1,129 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Admin</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .header{
-            font-size: x-large;
-            background-color: darkslategray;
-            color: #fff;
-            font-weight: bold;
-        }
-    </style>
+<head>
+  <title>Admin</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .header {
+      font-size: x-large;
+      background-color: darkslategray;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
 </head>
-  <body>
-    <div class="header p-3">Admin</div>
-    <div class="container mt-5">
-       <div class="row">
-        <div class="col-3 card p-2">
-            <img src="/assets/img/industry/1-480x480.jpg" width="100%" alt="">
-            <p>Name</p>
-            <div class="">
-                <a class="btn btn-primary" href="#">Update</a>
-                <a class="btn btn-danger" href="#">Delete</a>
-            </div>
+
+<body>
+  <div class="header p-3">Admin- Add Products</div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-6 mx-auto">
+        <div class="form-group">
+          <label for="pname">Product Name</label>
+          <input class="form-control" type="text" name="pname" id="pname">
         </div>
-       
-       </div>
+        <div class="form-group">
+          <label for="pdesc">Product Description</label>
+          <textarea class="form-control" type="text" name="pdesc" id="pdesc"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="pdesc">Product Image</label>
+          <input class="form-control" type="file" name="pimage" id="pimage" />
+        </div>
+        <div class="form-group">
+          <button id="addbtn" class="btn btn-primary">Add Product</button>
+        </div>
+      </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+  <script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+    import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js";
+    import {
+      getFirestore,
+      collection,
+      getDocs,
+      addDoc,
+    } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
+
+
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyChffyyF2q0wQ9WSU08Zg0gB7CAiJCHw5Y",
+      authDomain: "hyberabad-bottling.firebaseapp.com",
+      projectId: "hyberabad-bottling",
+      storageBucket: "hyberabad-bottling.appspot.com",
+      messagingSenderId: "123466086988",
+      appId: "1:123466086988:web:fc75689c48712b985752e9",
+      measurementId: "G-6X71P33LQM"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+    const storage = getStorage(app);
+
+    const pName = document.getElementById('pname');
+    const pDesc = document.getElementById('pDesc')
+    const pImage = document.getElementById('pimage')
+    const addbtn = document.getElementById('addbtn')
+
+    addbtn.addEventListener('click', async (e) => {
+    
+      const storageRef = ref(storage, "products/" + pName.value + "/" + pName.value + ".png")
+
+      try {
+
+        await uploadBytes(storageRef, pImage.files[0])
+
+        const data = {
+        pName: pName.value,
+        pDesc: pDesc.value,
+        pImage: await getDownloadURL(storageRef),
+        }
+        
+        const docRef = await addDoc(collection(db, "products"), data);
+        console.log("Document written with ID: ", docRef.id);
+        alert("Document written with ID: "+ docRef.id)
+      } catch (e) {
+        console.error("Error adding document: ", e);
+        alert("Error adding document: " + e)
+      }
+    })
+
+  </script>
+
+
+
+</body>
+
 </html>
