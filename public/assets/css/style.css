@@ -6661,6 +6661,7 @@ a.scroll-top.show {
 }
 .feature-project-two-single-item__image img {
   width: 100%;
+  height: 225px;
 }
 .feature-project-two-single-item__content {
   padding: 15px 20px;
