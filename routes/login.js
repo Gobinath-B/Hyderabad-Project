@@ -5,7 +5,7 @@ login.get('/',(req,res)=>{
     res.render('admin/login')
 })
 login.post('/',(req,res)=>{
-    console.log(req.body);
+    
     res.render("admin/dashboard")
 })
 

@@ -20,71 +20,83 @@
     .header {
       font-size: x-large;
       background-color: darkslategray;
-      color: #fff;
+      color: #977878;
       font-weight: bold;
     }
   </style>
 </head>
 
 <body>
-  <a  href="/admin/dashboard" style="display: block; text-decoration: none; " class="header p-3">Admin- Add Products</a>
+  <a href="/admin/dashboard" style="display: block;" class="header p-3">Admin- Edit Products</a>
   <div class="container mt-5">
     <div class="row">
       <div class="col-6 mx-auto">
         <div class="form-group">
           <label for="pname">Product Name</label>
-          <input class="form-control" type="text" name="pname" id="pname">
+          <input class="form-control" type="text" name="pname" id="pname" value="<%=data.pName%>">
         </div>
         <div class="form-group">
           <label for="pdesc">Product Description</label>
-          <textarea class="form-control" type="text" name="pdesc" id="pdesc"></textarea>
+          <textarea class="form-control" type="text" name="pdesc" id="pdesc"><%=data.pDesc%></textarea>
+        </div>
+        <div class="form-group">
+          <label for="pdesc">want update image?</label>
+          <input class="form-control" type="checkbox" name="checkimage" id="checkimage" />
         </div>
         <div class="form-group">
           <label for="pdesc">Product Image</label>
           <input class="form-control" type="file" name="pimage" id="pimage" />
         </div>
         <div class="form-group">
-          <button id="addbtn" class="btn btn-primary">Add Product</button>
+          <button id="addbtn" class="btn btn-primary">Update Product</button>
         </div>
       </div>
     </div>
   </div>
 
-<style>
-  
-  .loader4 {
-    position: absolute; 
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 100px; 
-     width:45px;
-     height:45px;
-     display:none;
-     padding:0px;
-     border-radius:100%;
-     border:5px solid;
-     border-top-color:rgba(246, 36, 89, 1);
-     border-bottom-color:rgba(255,255,255, 0.3);
-     border-left-color:rgba(246, 36, 89, 1);
-     border-right-color:rgba(255,255,255, 0.3);
-     -webkit-animation: loader4 1s ease-in-out infinite;
-     animation: loader4 1s ease-in-out infinite;
-  }
-  @keyframes loader4 {
-     from {transform: rotate(0deg);}
-     to {transform: rotate(360deg);}
-  }
-  @-webkit-keyframes loader4 {
-     from {-webkit-transform: rotate(0deg);}
-     to {-webkit-transform: rotate(360deg);}
-  }
-  
-    </style>
-    <div id="loader" class="loader4"></div>
+  <style>
+    .loader4 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+      width: 45px;
+      height: 45px;
+      display: none;
+      padding: 0px;
+      border-radius: 100%;
+      border: 5px solid;
+      border-top-color: rgba(246, 36, 89, 1);
+      border-bottom-color: rgba(255, 255, 255, 0.3);
+      border-left-color: rgba(246, 36, 89, 1);
+      border-right-color: rgba(255, 255, 255, 0.3);
+      -webkit-animation: loader4 1s ease-in-out infinite;
+      animation: loader4 1s ease-in-out infinite;
+    }
 
+    @keyframes loader4 {
+      from {
+        transform: rotate(0deg);
+      }
 
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes loader4 {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+  </style>
+  <div id="loader" class="loader4"></div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -97,6 +109,10 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
+  <script>
+
+    const b = <%- JSON.stringify(data) %>;
+  </script>
 
   <script type="module">
 
@@ -108,8 +124,9 @@
       collection,
       getDocs,
       addDoc,
+      updateDoc,
+      doc
     } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
-
 
 
     const firebaseConfig = {
@@ -121,43 +138,52 @@
       appId: "1:123466086988:web:fc75689c48712b985752e9",
       measurementId: "G-6X71P33LQM"
     };
-
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
     const db = getFirestore(app);
     const storage = getStorage(app);
-
+    const ProductRef = doc(db, 'products', b.id);
     const pName = document.getElementById('pname');
     const pDesc = document.getElementById('pdesc')
     const pImage = document.getElementById('pimage')
+    const loader = document.getElementById('loader')
     const addbtn = document.getElementById('addbtn')
 
     addbtn.addEventListener('click', async (e) => {
-    
       const storageRef = ref(storage, "products/" + pName.value + "/" + pName.value + ".png")
 
       try {
         loader.style.display = "inline-block";
+        if (document.getElementById('checkimage').checked) {
+          await uploadBytes(storageRef, pImage.files[0])
+          const data = {
+            pName: pName.value,
+            pDesc: pDesc.value,
+            pImage: await getDownloadURL(storageRef),
+          }
+          const docRef = await updateDoc(ProductRef, data);
+          console.log("",docRef);
+          alert("Successfully updated")
 
-        await uploadBytes(storageRef, pImage.files[0])
+          loader.style.display = "none";
 
-        const data = {
-        pName: pName.value,
-        pDesc: pDesc.value,
-        pImage: await getDownloadURL(storageRef),
+        } else {
+          const data = {
+            pName: pName.value,
+            pDesc: pDesc.value,
+          }
+          const docRef = await updateDoc(ProductRef, data);
+          console.log("",docRef);
+          alert("Successfully updated")
+
+          loader.style.display = "none";
         }
-        
-        const docRef = await addDoc(collection(db, "products"), data);
-        console.log("Document written with ID: ", docRef.id);
-        alert("Document written with ID: "+ docRef.id)
-        loader.style.display = "none";
 
       } catch (e) {
         loader.style.display = "none";
-
-        console.error("Error adding document: ", e);
-        alert("Error adding document: " + e)
+        console.error("Error Updating document: ", e);
+        alert("Error Updating document: " + e)
       }
     })
 
