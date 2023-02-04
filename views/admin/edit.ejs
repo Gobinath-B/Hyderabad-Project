@@ -35,6 +35,16 @@
           <label for="pname">Product Name</label>
           <input class="form-control" type="text" name="pname" id="pname" value="<%=data.pName%>">
         </div>
+        <% const pcat=['Filling','Sealing','Labeling','Conveyor','Spares and Others'] %>
+        <div class="form-group">
+          <label for="pname">Product Category</label>
+          <select class="form-control" name="pcat" id="pcat">
+            <% pcat.forEach(f=> { %>
+              <%= console.log(`${f}==${data.pcat}`) %>
+              <option value="<%= f %>" <%= data.pcat == f ? 'selected': '' %>  ><%= f %></option>
+          <% }); %>
+          </select>
+        </div>
         <div class="form-group">
           <label for="pdesc">Product Description</label>
           <textarea class="form-control" type="text" name="pdesc" id="pdesc"><%=data.pDesc%></textarea>
@@ -149,6 +159,7 @@
     const pImage = document.getElementById('pimage')
     const loader = document.getElementById('loader')
     const addbtn = document.getElementById('addbtn')
+    const pcat = document.getElementById('pcat')
 
     addbtn.addEventListener('click', async (e) => {
       const storageRef = ref(storage, "products/" + pName.value + "/" + pName.value + ".png")
@@ -160,6 +171,7 @@
           const data = {
             pName: pName.value,
             pDesc: pDesc.value,
+            pcat:pcat.value,
             pImage: await getDownloadURL(storageRef),
           }
           const docRef = await updateDoc(ProductRef, data);
@@ -172,6 +184,7 @@
           const data = {
             pName: pName.value,
             pDesc: pDesc.value,
+            pcat:pcat.value,
           }
           const docRef = await updateDoc(ProductRef, data);
           console.log("",docRef);

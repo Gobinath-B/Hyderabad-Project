@@ -36,6 +36,16 @@
           <input class="form-control" type="text" name="pname" id="pname">
         </div>
         <div class="form-group">
+          <label for="pname">Product Category</label>
+          <select class="form-control" type="text" name="pcat" id="pcat">
+            <option value="Filling">Filling</option>
+            <option value="Sealing">Sealing</option>
+            <option value="Labeling">Labeling</option>
+            <option value="Conveyor">Conveyor</option>
+            <option value="Spares and Others">Spares and Others</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label for="pdesc">Product Description</label>
           <textarea class="form-control" type="text" name="pdesc" id="pdesc"></textarea>
         </div>
@@ -132,6 +142,7 @@
     const pDesc = document.getElementById('pdesc')
     const pImage = document.getElementById('pimage')
     const addbtn = document.getElementById('addbtn')
+    const pcat = document.getElementById('pcat')
 
     addbtn.addEventListener('click', async (e) => {
     
@@ -145,6 +156,7 @@
         const data = {
         pName: pName.value,
         pDesc: pDesc.value,
+        pcat:pcat.value,
         pImage: await getDownloadURL(storageRef),
         }
         
