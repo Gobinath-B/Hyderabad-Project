@@ -74,6 +74,11 @@
     margin-right: -16px;
   }
 }
+
+
+
+
+
 @media only screen and (min-width: 1300px) {
   .row-16 > [class*=col] {
     padding-left: 16px;
@@ -8813,6 +8818,13 @@ a.scroll-top.show {
   background: #fff;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.brand-box{
+
+   width: 200px;
+   height: 200px;
+
 }
 
 /*=====  End of brand logo slider  ======*/
