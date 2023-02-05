@@ -2111,7 +2111,7 @@ input::placeholder {
   font-weight: 500;
   position: static;
   margin-left: 10px;
-  content: "\f123";
+  
   vertical-align: middle;
 }
 .header-navigation__nav nav > ul > li.has-children--multilevel-submenu {
