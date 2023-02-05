@@ -689,21 +689,21 @@
                                 <div class="col-lg-6">
                                     <div class="product-details__image-slider">
                                         <div class="shop-single-product__badges">
-                                            <span class="hot">Hot</span>
-                                            <span class="onsale">-8%</span>
+                                            <span class="hot"><%= data.pcat%></span>
+                                            <!-- <span class="onsale">-8%</span> -->
                                         </div>
                                         <div class="swiper-container product-details__image-slider-container">
                                             <div class="swiper-wrapper product-details__image-slider-wrapper">
                                                 <div class="swiper-slide">
                                                     <div class="product-details__image-single">
-                                                        <img src="assets/img/products/2-570x570.jpg" class="img-fluid" alt="">
+                                                        <img src="<%= data.pImage%>" class="img-fluid" alt="">
                                                     </div>
                                                 </div>
-                                                <div class="swiper-slide">
+                                                <!-- <div class="swiper-slide">
                                                     <div class="product-details__image-single">
                                                         <img src="assets/img/products/1-570x570.jpg" class="img-fluid" alt="">
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-15"></div>
@@ -711,27 +711,27 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="product-details__content">
-                                        <h2 class="product-details__title">Bi-Material Nail Sets</h2>
+                                        <h2 class="product-details__title"><%= data.pName%></h2>
                                         <div class="product-details__price">
-                                            <span class="main-price discounted">$100.00</span>
-                                            <span class="discounted-price">$80.00</span>
+                                            <!-- <span class="main-price discounted">$100.00</span>
+                                            <span class="discounted-price">$80.00</span> -->
                                         </div>
                                         <div class="product-details__desc section-space--bottom--30">
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel mollitia quod minus iure exercitationem, nesciunt numquam omnis tempora sequi delectus.</p>
+                                            <p><%= data.pDesc%></p>
                                         </div>
-                                        <div class="product-details__quantity-wrapper section-space--bottom--40">
+                                        <!-- <div class="product-details__quantity-wrapper section-space--bottom--40">
                                             <span class="quantity-label">Quantity</span>
                                             <div class="pro-qty d-inline-block">
                                                 <input type="text" value="1">
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="product-details__actions">
-                                            <a href="#" class="add-cart-btn"> <i class="ion-ios-cart"></i> ADD TO CART</a>
-                                            <a href="javascript:void(0)" class="wishlist" data-tippy="Add to wishlist" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="top"><i class="ion-android-favorite"></i></a>
-                                            <a href="javascript:void(0)" class="compare" data-tippy="Compare" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="top"><i class="ion-ios-shuffle-strong"></i></a>
+                                            <a href="#" class="add-cart-btn"> <i class="ion-ios-cart"></i> GET Enquiry  </a>
+                                            <!-- <a href="javascript:void(0)" class="wishlist" data-tippy="Add to wishlist" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="top"><i class="ion-android-favorite"></i></a>
+                                            <a href="javascript:void(0)" class="compare" data-tippy="Compare" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="top"><i class="ion-ios-shuffle-strong"></i></a> -->
                                         </div>
                                         <div class="product-details__meta-wrap">
-                                            <div class="single-meta">
+                                            <!-- <div class="single-meta">
                                                 <h4 class="title">SKU: </h4>
                                                 <span class="sku">woo-cap</span>
                                             </div>
@@ -750,7 +750,7 @@
                                                         <li><a href="http://skype.com/" data-tippy="Skype" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="top"><i class="ion-social-skype"></i></a></li>
                                                     </ul>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -760,229 +760,8 @@
                 </div>
             </div>
         </div>
-        <!--====================  End of product details  area  ====================-->
-        <!--=======  single product description tab area  =======-->
-        <div class="single-product-description-tab-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!--=======  description tab navigation  =======-->
-
-                        <div class="description-tab-navigation">
-                            <div class="nav nav-tabs" id="nav-tab2" role="tablist">
-                                <a class="nav-item nav-link active" id="description-tab" data-bs-toggle="tab" href="#product-description" role="tab" aria-selected="true">Description</a>
-                                <a class="nav-item nav-link" id="additional-info-tab" data-bs-toggle="tab" href="#product-additional-info" role="tab" aria-selected="false">Additional Information</a>
-                                <a class="nav-item nav-link" id="review-tab" data-bs-toggle="tab" href="#product-review" role="tab" aria-selected="false">Reviews (3)</a>
-                            </div>
-                        </div>
-
-                        <!--=======  End of description tab navigation  =======-->
-                    </div>
-                </div>
-            </div>
-
-            <!--=======  description tab content  =======-->
-            <div class="single-product-description-tab-content">
-
-                <div class="tab-content">
-
-                    <div class="tab-pane fade show active" id="product-description" role="tabpanel" aria-labelledby="description-tab">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!--=======  description content  =======-->
-
-                                    <div class="description-content">
-                                        <p class="long-desc">Inspired by the simplistic style of traditional Scandinavian design, this cone shaped ceiling pendant adds an understated elegance to any interior design scheme.
-                                            Strung on a 3m coloured cord, this simple yet stylish ceiling light can be hung above your breakfast bar or dining table to enhance your surroundings.
-                                            A modern interpretation of a classic pendant light, Annular is available in a choice of muted colourways and will look wonderful hung alone, or as a cluster for greater visual impact.</p>
-
-                                        <p><b>Light source: Integrated LED (non-replaceable) with 30,000 hour life span.</b></p>
-                                        <p><b>Specification: EU 220-Volts</b></p>
-                                        <p><b>Ceiling rose: White – included</b></p>
-                                        <p><b>Cable: 3 metre adjustable textile cord.</b></p>
-                                        <p><b>Approximate net product weight: 2.6kg</b></p>
-                                        <p><b>This product is hardwired – professional installation recommended.</b></p>
-                                    </div>
-
-                                    <!--=======  End of description content  =======-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="product-additional-info" role="tabpanel" aria-labelledby="additional-info-tab">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!--=======  additional info content  =======-->
-
-                                    <div class="additional-info-content">
-                                        <table class="additional-info-table">
-                                            <tbody>
-                                                <tr>
-                                                    <th>Dimensions</th>
-                                                    <td class="product_dimensions">300 x 24 x 32 cm</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <th>color</th>
-                                                    <td>
-                                                        <p>Black, Lavender Grey, Pink, White</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <!--=======  End of additional info content  =======-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="product-review" role="tabpanel" aria-labelledby="review-tab">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!--=======  review content  =======-->
-
-                                    <div class="review-content-wrapper">
-                                        <!--=======  review comments  =======-->
-
-                                        <div class="review-comments">
-
-                                            <h4 class="review-comment-title">6 REVIEWS FOR OLIVIA SHAYN COVER CHAIR</h4>
-
-                                            <!--=======  single-review comment  =======-->
-
-                                            <div class="single-review-comment">
-                                                <div class="single-review-comment__image">
-                                                    <img src="assets/img/review/one.png" class="img-fluid" alt="">
-                                                </div>
-
-                                                <div class="single-review-comment__content">
-                                                    <div class="review-time"><i class="fa fa-calendar"></i> June 7, 2022</div>
-                                                    <div class="rating">
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                    </div>
-
-                                                    <p class="review-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, in.
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <!--=======  End of single-review comment  =======-->
-
-                                            <!--=======  single-review comment  =======-->
-
-                                            <div class="single-review-comment">
-                                                <div class="single-review-comment__image">
-                                                    <img src="assets/img/review/two.jpg" class="img-fluid" alt="">
-                                                </div>
-
-                                                <div class="single-review-comment__content">
-                                                    <div class="review-time"><i class="fa fa-calendar"></i> June 8, 2022</div>
-                                                    <div class="rating">
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                    </div>
-
-                                                    <p class="review-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, in.
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <!--=======  End of single-review comment  =======-->
-
-                                            <!--=======  single-review comment  =======-->
-
-                                            <div class="single-review-comment">
-                                                <div class="single-review-comment__image">
-                                                    <img src="assets/img/review/three.jpg" class="img-fluid" alt="">
-                                                </div>
-
-                                                <div class="single-review-comment__content">
-                                                    <div class="review-time"><i class="fa fa-calendar"></i> June 9, 2022</div>
-                                                    <div class="rating">
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                    </div>
-
-                                                    <p class="review-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, in.
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <!--=======  End of single-review comment  =======-->
-
-
-                                        </div>
-
-                                        <!--=======  End of review comments  =======-->
-
-                                        <!--=======  review comment form  =======-->
-
-                                        <div class="review-comment-form">
-                                            <h4 class="review-comment-title">Add a review</h4>
-                                            <p class="review-comment-subtitle">Your email address will not be published. Required fields are marked *</p>
-
-                                            <form action="#">
-                                                <div class="form-group">
-                                                    <label>Name <span>*</span> </label>
-                                                    <input type="text" id="reviewerName" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Email <span>*</span> </label>
-                                                    <input type="email" id="reviewerEmail" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="d-inline-block mb-0">Your rating</label>
-                                                    <div class="rating d-inline-block" id="reviewRating">
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                        <i class="fa fa-star active"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Your review <span>*</span></label>
-                                                    <textarea name="reviewComment" id="reviewComment" cols="30" rows="10"></textarea>
-                                                </div>
-
-                                                <button type="submit" class="ht-btn ht-btn--dark border-0">SUBMIT</button>
-                                            </form>
-                                        </div>
-
-                                        <!--=======  End of review comment form  =======-->
-                                    </div>
-
-                                    <!--=======  End of review content  =======-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-            <!--=======  End of description tab content  =======-->
-
-        </div>
-        <!--=======  End of single product description tab area  =======-->
-        <!--====================  related product slider ====================-->
+       
+        
         <div class="related-product-slider-area">
             <div class="container">
                 <div class="row">
@@ -997,151 +776,41 @@
                         <div class="related-product-slider">
                             <div class="swiper-container related-product-slider__container">
                                 <div class="swiper-wrapper related-product-slider__wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="shop-single-product mb-0">
-                                            <div class="shop-single-product__thumb-wrapper">
-                                                <div class="shop-single-product__badges">
-                                                    <span class="hot">Hot</span>
-                                                    <span class="onsale">-8%</span>
+                                    <% relate.forEach(e=>{%>
+                                        <div class="swiper-slide">
+                                            <div class="shop-single-product mb-0">
+                                                <div class="shop-single-product__thumb-wrapper">
+                                                    <div class="shop-single-product__badges">
+                                                        <span class="hot"><%=e.pcat%></span>
+                                                        <!-- <span class="onsale">-8%</span> -->
+                                                    </div>
+                                                    <div class="shop-single-product__image">
+                                                        <a href="shop-product.html">
+                                                            <img src="<%=e.pImage%>" class="img-fluid" style="height:300px" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <!-- <div class="shop-single-product__actions">
+                                                        <a href="javascript:void(0)" class="quick-view" data-bs-toggle="modal" data-bs-target="#quick-view-modal-container" data-tippy="Quick view" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-search-strong"></i></a>
+                                                        <a href="javascript:void(0)" class="wishlist" data-tippy="Add to wishlist" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-android-favorite"></i></a>
+                                                        <a href="javascript:void(0)" class="compare" data-tippy="Compare" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-shuffle-strong"></i></a>
+                                                    </div> -->
+                                                    <div class="shop-single-product__cart-btn">
+                                                        <a href="/product/<%=e.id%>"><i class="ion-ios-cart"></i> GET ENQUIRY</a>
+                                                    </div>
                                                 </div>
-                                                <div class="shop-single-product__image">
-                                                    <a href="shop-product.html">
-                                                        <img src="assets/img/products/1-400x520.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="shop-single-product__actions">
-                                                    <a href="javascript:void(0)" class="quick-view" data-bs-toggle="modal" data-bs-target="#quick-view-modal-container" data-tippy="Quick view" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-search-strong"></i></a>
-                                                    <a href="javascript:void(0)" class="wishlist" data-tippy="Add to wishlist" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-android-favorite"></i></a>
-                                                    <a href="javascript:void(0)" class="compare" data-tippy="Compare" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-shuffle-strong"></i></a>
-                                                </div>
-                                                <div class="shop-single-product__cart-btn">
-                                                    <a href="#"><i class="ion-ios-cart"></i> ADD TO CART</a>
-                                                </div>
-                                            </div>
-                                            <div class="shop-single-product__content">
-                                                <h3 class="shop-single-product__title"><a href="shop-product.html">Bi-Material Nail Sets</a></h3>
-                                                <div class="shop-single-product__price">
-                                                    <span class="main-price discounted">$100.00</span>
-                                                    <span class="discounted-price">$80.00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="shop-single-product mb-0">
-                                            <div class="shop-single-product__thumb-wrapper">
-                                                <div class="shop-single-product__badges">
-                                                    <span class="hot">Hot</span>
-                                                </div>
-                                                <div class="shop-single-product__image">
-                                                    <a href="shop-product.html">
-                                                        <img src="assets/img/products/2-400x520.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="shop-single-product__actions">
-                                                    <a href="javascript:void(0)" class="quick-view" data-bs-toggle="modal" data-bs-target="#quick-view-modal-container" data-tippy="Quick view" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-search-strong"></i></a>
-                                                    <a href="javascript:void(0)" class="wishlist" data-tippy="Add to wishlist" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-android-favorite"></i></a>
-                                                    <a href="javascript:void(0)" class="compare" data-tippy="Compare" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-shuffle-strong"></i></a>
-                                                </div>
-                                                <div class="shop-single-product__cart-btn">
-                                                    <a href="#"><i class="ion-ios-cart"></i> ADD TO CART</a>
-                                                </div>
-                                            </div>
-                                            <div class="shop-single-product__content">
-                                                <h3 class="shop-single-product__title"><a href="shop-product.html">Dust Extractor</a></h3>
-                                                <div class="shop-single-product__price">
-                                                    <span class="main-price discounted">$80.00</span>
-                                                    <span class="discounted-price">$60.00</span>
+                                                <div class="shop-single-product__content">
+                                                    <h3 class="shop-single-product__title"><a href="/product/<%=e.id%>"><%=e.pName%></a></h3>
+                                                    <!-- <div class="shop-single-product__price">
+                                                        <span class="main-price discounted">$100.00</span>
+                                                        <span class="discounted-price">$80.00</span>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="shop-single-product mb-0">
-                                            <div class="shop-single-product__thumb-wrapper">
-                                                <div class="shop-single-product__badges">
-                                                    <span class="onsale">-8%</span>
-                                                </div>
-                                                <div class="shop-single-product__image">
-                                                    <a href="shop-product.html">
-                                                        <img src="assets/img/products/3-400x520.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="shop-single-product__actions">
-                                                    <a href="javascript:void(0)" class="quick-view" data-bs-toggle="modal" data-bs-target="#quick-view-modal-container" data-tippy="Quick view" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-search-strong"></i></a>
-                                                    <a href="javascript:void(0)" class="wishlist" data-tippy="Add to wishlist" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-android-favorite"></i></a>
-                                                    <a href="javascript:void(0)" class="compare" data-tippy="Compare" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-shuffle-strong"></i></a>
-                                                </div>
-                                                <div class="shop-single-product__cart-btn">
-                                                    <a href="#"><i class="ion-ios-cart"></i> ADD TO CART</a>
-                                                </div>
-                                            </div>
-                                            <div class="shop-single-product__content">
-                                                <h3 class="shop-single-product__title"><a href="shop-product.html">Fiberglass Stepladder</a></h3>
-                                                <div class="shop-single-product__price">
-                                                    <span class="main-price discounted">$120.00</span>
-                                                    <span class="discounted-price">$100.00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="shop-single-product mb-0">
-                                            <div class="shop-single-product__thumb-wrapper">
+                                        
 
-                                                <div class="shop-single-product__image">
-                                                    <a href="shop-product.html">
-                                                        <img src="assets/img/products/4-400x520.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="shop-single-product__actions">
-                                                    <a href="javascript:void(0)" class="quick-view" data-bs-toggle="modal" data-bs-target="#quick-view-modal-container" data-tippy="Quick view" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-search-strong"></i></a>
-                                                    <a href="javascript:void(0)" class="wishlist" data-tippy="Add to wishlist" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-android-favorite"></i></a>
-                                                    <a href="javascript:void(0)" class="compare" data-tippy="Compare" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-shuffle-strong"></i></a>
-                                                </div>
-                                                <div class="shop-single-product__cart-btn">
-                                                    <a href="#"><i class="ion-ios-cart"></i> ADD TO CART</a>
-                                                </div>
-                                            </div>
-                                            <div class="shop-single-product__content">
-                                                <h3 class="shop-single-product__title"><a href="shop-product.html">Folding Locking Hex Key</a></h3>
-                                                <div class="shop-single-product__price">
-                                                    <span class="main-price discounted">$50.00</span>
-                                                    <span class="discounted-price">$60.00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="shop-single-product mb-0">
-                                            <div class="shop-single-product__thumb-wrapper">
-                                                <div class="shop-single-product__badges">
-                                                    <span class="hot">Hot</span>
-                                                    <span class="onsale">-8%</span>
-                                                </div>
-                                                <div class="shop-single-product__image">
-                                                    <a href="shop-product.html">
-                                                        <img src="assets/img/products/5-400x520.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="shop-single-product__actions">
-                                                    <a href="javascript:void(0)" class="quick-view" data-bs-toggle="modal" data-bs-target="#quick-view-modal-container" data-tippy="Quick view" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-search-strong"></i></a>
-                                                    <a href="javascript:void(0)" class="wishlist" data-tippy="Add to wishlist" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-android-favorite"></i></a>
-                                                    <a href="javascript:void(0)" class="compare" data-tippy="Compare" data-tippy-inertia="false" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder__black" data-tippy-placement="left"><i class="ion-ios-shuffle-strong"></i></a>
-                                                </div>
-                                                <div class="shop-single-product__cart-btn">
-                                                    <a href="#"><i class="ion-ios-cart"></i> ADD TO CART</a>
-                                                </div>
-                                            </div>
-                                            <div class="shop-single-product__content">
-                                                <h3 class="shop-single-product__title"><a href="shop-product.html">Folding Retractable</a></h3>
-                                                <div class="shop-single-product__price">
-                                                    <span class="main-price discounted">$100.00</span>
-                                                    <span class="discounted-price">$80.00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <%})%>
+                                    
                                 </div>
                             </div>
                             <div class="ht-swiper-button-prev ht-swiper-button-prev-15 ht-swiper-button-nav"><i class="ion-chevron-left"></i></div>
